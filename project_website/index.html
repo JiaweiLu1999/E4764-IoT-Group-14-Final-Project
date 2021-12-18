@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Columbia University EECS E4764 IoT Project Report #14</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<!-- <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span> -->
+							<h1 id="title">Smart Vending Machine</h1>
+							<p>Columbia University <br>
+								EECS E4764 Fall'21 Internet of Things<br>
+								Intelligent and Connected Systems<br>
+								Team 14 Project Report
+							</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Abstract</span></a></li>
+								<li><a href="#motivation" id="motivation-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Motivation</span></a></li>
+								<li><a href="#system" id="system-link" class="skel-layers-ignoreHref"><span class="icon fa-th">System</span></a></li>
+								<li><a href="#results" id="results-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Results</span></a></li>
+								<li><a href="#references" id="references-link" class="skel-layers-ignoreHref"><span class="icon fa-th">References</span></a></li>
+								<li><a href="#team" id="team-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Our Team</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/YiR1l8RYqwU" frameborder="0" allowfullscreen></iframe>
+
+								<h2 class="alt">Smart Vending Machine</h2>
+								<p>The Smart Vending Machine has two ways of interaction.
+									<br>
+									The first way doesn’t require anything in hand during the whole buying because we built in a camera with face recognition and a touch screen with beautiful UI. 
+									Customers can buy and pay simply with their face. Users can also use a smartphone if they don’t want to touch the screen. 
+									Any operation like shopping, registering, topping up and uploading a photo for face login, can be easily done in the app. 
+									All user profiles and stock information are stored in a secure and real-time cloud database. 
+									<br>
+									Our pursuit is to provide users and maintainers a comfortable using experience.
+								</p>
+
+
+							<footer>
+								<a href="#motivation" class="button scrolly">Motivation</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="motivation" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Motivation</h2>
+							</header>
+
+							<p align="left">Imagine you are running outside and feel thirsty. 
+								Luckily, there’s a vending machine with various drinks. 
+								You want to buy a bottle of water but you realize that you didn’t bring your wallet. So sad!
+							</p>
+
+							<p align="left">
+								However, if it happens to be our vending machine, congratulations! 
+							</p>
+							<p align="left">
+								You just need to log in to our machine with your lovely face and select the item on the touch screen, and everything is done! 
+								By the way, any touch could increase the risk of getting Covid, so we also designed a vending machine app for smartphones to help protect your health.
+							</p>
+
+
+
+						</div>
+					</section>
+
+
+					<section id="system" class="three">
+						<div class="container">
+
+							<header>
+								<h2>System</h2>
+							</header>
+ 
+
+							<h3 align="left">Architecture</h3>
+
+							<p align="left">The architecture of our Smart Vending Machine is summarized in the figure below.</p>
+						
+
+							<img src="images/architecture.png" width=100% />
+
+							<p align="left">We will describe each component of our system in detail in the next section.</p>
+
+							<h3 align="left">Technical Components</h3>
+							
+							
+							<h4 align="left">1. &nbsp Embedded systems</h4>
+								<img src="images/raspberrypi.jpeg" width=20%/>
+								<p>Raspberry PI 4 Model B</p>
+
+								<img src="images/picamera.jpeg" width=20% />
+								<p>Raspberry PI Camera with 5 Million Pixels</p>
+
+								<img src="images/motor.jpg" width=20% />
+								<p>Raspberry PI 4-Phase Stepper Motor</p>
+
+								<img src="images/tsada.jpeg" width=20% />
+								<p>320x240 2.8" TFT+Touchscreen</p>
+							
+							<h4 align="left">2. &nbsp Cloud Database</h4>
+								<img src="images/fblogo.svg" width=20%/>
+								<p>Firebase Realtime DB + Storage</p>
+							
+								
+							<h4 align="left">3. &nbsp Software</h4>
+
+							<img src="images/androidlogo.png" width=20%/>
+							<p>App Interacting with Smart Vending Machine</p>
+							
+							<img src="images/dliblogo.png" width=10%/>
+							<p>Face Recognition Algorithm based on dlib</p>
+
+							
+							<h3 align="left">Prototype</h3>
+
+							<img src="images/prototype.png" width=20%/>
+							<img src="images/appproto.png" width=15%/>
+							<p>Smart Vending Machine with Face Recognition 
+								<br>+
+								<br>Android App</p>
+
+
+
+						</div>
+					</section>
+
+
+					<section id="results" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Results</h2>
+							</header>
+							
+							<h3 align="left">1. &nbsp Android App</h3>
+
+							<img class="padded" src="images/app1.png" width=15%/> &nbsp
+							<img class="padded" src="images/app2.png" width=15%/>
+							<p>We designed an Android App shown as above.
+								<br>
+								As a new user, we can Register and Login to the shopping page.
+								<br>
+								We can TOP UP to buy things in Smart Vending Machine.
+								<br>
+								If we want to enable the Face Recognition function of Smart Vending Machine, we need to upload a profile photo. 
+							</p>
+
+							<h3 align="left">2. &nbsp Cloud Data Base</h3>
+
+							<img class="padded" src="images/fb1.png" width=40%/> 
+							<img class="padded" src="images/fb2.png" width=40%/> 
+							<p>We can manage our Firebase RealtimeDB and Storage.
+								<br>
+								We use RealtimeDB to track Product and User information.
+								<br>
+								We use Storage to save the profile photos of our users.
+							</p>
+
+							
+							<h3 align="left">3. &nbsp Face Recognition</h3>
+
+							<img class="padded" src="images/face1.png" width=40%/> 
+							<img class="padded" src="images/face2.png" width=39%/> 
+							<p>We implement a Face Recoginition Program for Raspberry Pi.
+								<br>
+								Firstly, we use a Deep Neural Network to detect the face location in one image.
+								<br>
+								Then, we encoding the face to a Tensor.
+								<br>
+								After updating the Dataset and keeping it the same as the Cloud Storage, we can comparing the encoded image with every image in our storage, 
+								then choose the one has the largest confidence.
+								<br>
+								Finally, we can print the related username and account information.
+							</p>
+
+							<h3 align="left">4. &nbsp Example A: Buy things using Android App</h3>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/3ETGM1LA1Rc" frameborder="0" allowfullscreen></iframe>
+
+
+							<h3 align="left">5. &nbsp Example B: Buy things with Face Recoginition</h3>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/b2_GYJCJxdI" frameborder="0" allowfullscreen></iframe>
+
+							<h3 align="left">6. &nbsp Check our Project in Github for more information!</h3>
+							<a href="https://github.com/JiaweiLu1999/E4764-IoT-Group-14-Final-Project" 
+													class="icon fa-github" target="_blank"> &nbsp Group #14<span class="label">Link</span></a></p>
+
+
+
+
+						</div>
+					</section>
+
+					<section id="references" class="three">
+						<div class="container">
+
+							<header>
+								<h2>References</h2>
+							</header>
+
+							<p align="left">
+								1. &nbsp <a href="https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78">
+								Modern Face Recognition with Deep Learning</a>
+							<br>
+								2. &nbsp <a href="https://github.com/ageitgey/face_recognition">
+								Recognize and manipulate faces from Python or from the command line with the world's simplest face recognition library</a>
+							
+							<br>
+								3. &nbsp <a href="https://firebase.google.com/docs">
+									Firebase Documentation</a>
+							
+							<br>
+								4. &nbsp <a href="https://lawsie.github.io/guizero/about/">
+									GUIZERO Documentation</a></p>
+
+						</div>
+					</section>
+
+
+				<!-- About Me -->
+					<section id="team" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Our Team</h2>
+							</header>
+
+							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/jiawei.jpg" alt="" /></a>
+										<header>
+											<h3>Jiawei Lu</h3>
+											<p>Columbia University Master student.
+												<br>Department of Electrical Engineering</p>
+											<p><a href="https://www.linkedin.com/in/jiaweilucolumbia/" 
+												class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a>
+												&nbsp;
+												<a href="https://github.com/JiaweiLu1999" 
+													class="icon fa-github" target="_blank"><span class="label">Github</span></a></p>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/chenhao.jpg" alt="" /></a>
+										<header>
+											<h3>Chenhao Wang</h3>
+											<p>Columbia University Master student.
+												<br>Department of Electrical Engineering</p>
+											<p><a href="https://www.linkedin.com/in/chenhaowangcu/" 
+												class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/yuxin.jpg" alt="" /></a>
+										<header>
+											<h3>Yuxin Li</h3>
+											<p>Columbia University Master student.
+												<br>Department of Electrical Engineering</p>
+											<p><a href="http://linkedin.com/in/yuxin-li-430a97185" 
+												class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></p>
+
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p align="left">
+								<strong>Jiawei Lu: &nbsp&nbsp</strong>jl5999@columbia.edu</br>
+								<strong>Chenhao Wang:  &nbsp&nbsp</strong>cw3355@columbia.edu</br>
+								<strong>Yuxin Li:  &nbsp&nbsp</strong>yl4873@columbia.edu</br>
+							</br>
+								<strong>Columbia University </strong><a href="http://www.ee.columbia.edu">Department of Electrical Engineering</a><br>
+								<!-- <strong>Class Website:</strong>
+									<a href="https://edblogs.columbia.edu/eecs4764-001-2019-3/">Columbia University EECS E4764 Fall '21 IoT</a></br> -->
+								<strong>Instructor:</strong> <a href="http://fredjiang.com/">Professsor Xiaofan (Fred) Jiang</a>
+							</p>
+
+
+							<!-- <form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form> -->
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; IoT Project | All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

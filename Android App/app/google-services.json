@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "496985020845",
+    "project_id": "vending-login",
+    "storage_bucket": "vending-login.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496985020845:android:b275be353eaaa41c2e6924",
+        "android_client_info": {
+          "package_name": "com.example.vendingmachine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496985020845-r54a60r279eadapurmmjbqb7s8qntcfv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4UmtOdS_IxH18bCOzJC-c4D4Ej6NEJEI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496985020845-r54a60r279eadapurmmjbqb7s8qntcfv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
